@@ -1,4 +1,3 @@
-import CardDeck from "../lib/cardDeck";
 
 interface Props{
     suit: string,
@@ -23,9 +22,6 @@ const Card:React.FC<Props> = (props)=>{
             break;
 
     }
-
-    let seven = new CardDeck([]);
-    console.log(seven.getCards(4));
 
     return(
         <div className= "playingCards faceImages">
