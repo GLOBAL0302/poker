@@ -1,7 +1,11 @@
+import CardDeck from "../lib/cardDeck";
+
 interface Props{
     suit: string,
     rank: string,
 }
+
+
 const Card:React.FC<Props> = (props)=>{
     let cardSymbol:string = "";
     switch (props.suit){
@@ -17,7 +21,12 @@ const Card:React.FC<Props> = (props)=>{
         case "spades":
             cardSymbol = "♠";
             break;
+
     }
+
+    let seven = new CardDeck([]);
+    console.log(seven.getCards(4));
+
     return(
         <div className= "playingCards faceImages">
          <span className={"card " + props.suit  + " rank-"+ props.rank}>
