@@ -36,7 +36,9 @@ function App() {
                 <Card rank={cards[2].rank} suit={cards[2].suit}/>
                 <Card rank={cards[3].rank} suit={cards[3].suit}/>
                 <Card rank={cards[4].rank} suit={cards[4].suit}/>
-                <div><button onClick={changeCard}>Раздать карты</button></div>
+                <div className="appBtn">
+                    <button onClick={changeCard}>Раздать карты</button>
+                </div>
             </div>
         )
     }
